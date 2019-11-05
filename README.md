@@ -15,6 +15,7 @@ https://github.com/spring-guides/gs-accessing-data-mysql
 ```
 1 oc login https://master.scjocp3-a9fc.open.redhat.com:443 --token=nwDc3rbn95eXEIWf9kbMcC2enncBiU3rAIXgLfdQErE
 2 oc project web-form-demo
+  oc delete --all dc,bc,po,svc,secret,pvc,route
 3 oc new-app --help
 4 oc new-app https://github.com/spring-guides/gs-accessing-data-mysql.git --context-dir=complete
 5 oc new-app https://github.com/spring-guides/gs-accessing-data-mysql.git --context-dir=complete --image=openshift/java
