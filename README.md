@@ -1,6 +1,10 @@
 # web-db-proto
 Escenario experimental para nuevas adopciones
 
+## Referencias
+https://github.com/spring-guides/gs-handling-form-submission
+https://github.com/spring-guides/gs-accessing-data-mysql
+
 ## Instrucciones
 ```
 1 oc login https://master.scjocp3-a9fc.open.redhat.com:443 --token=nwDc3rbn95eXEIWf9kbMcC2enncBiU3rAIXgLfdQErE
