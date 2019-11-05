@@ -33,7 +33,7 @@ https://github.com/spring-guides/gs-accessing-data-mysql
 17 oc new-app mysql-persistent -e MYSQL_USER=admin -e MYSQL_PASSWORD=admin -e MYSQL_DATABASE=sample -e MYSQL_ROOT_PASSWORD=admin
 18 oc get pods
 19 oc logs -f mysql-1-t6jpw
-20 oc rhs mysql-1-t6jpw
+20 oc rsh mysql-1-t6jpw
 21 vim application.properties
 22 oc new-app https://github.com/spring-guides/gs-accessing-data-mysql.git --context-dir=complete --image=openshift/java
 23 oc create configmap db-config --from-file=application.properties
