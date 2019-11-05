@@ -3,7 +3,13 @@ Escenario experimental para nuevas adopciones
 
 ## Referencias
 https://github.com/spring-guides/gs-handling-form-submission
+
 https://github.com/spring-guides/gs-accessing-data-mysql
+
+## Lectura
+
+[Cloud Native Architectures: Design high-availability and cost-effective applications for the cloud](https://www.amazon.com/Cloud-Native-Architectures-high-availability-cost-effective-ebook/dp/B0788SDV7W/ref=pd_rhf_se_s_sspa_dk_rhf_search_pt_sub_0_6/140-3921155-8579238?_encoding=UTF8&pd_rd_i=B0788SDV7W&pd_rd_r=89fb40db-359c-4f2e-9c9b-d00e047a3142&pd_rd_w=HgTBm&pd_rd_wg=3sa4D&pf_rd_p=6b99a1a0-3d79-4d28-99ba-822278a5e800&pf_rd_r=X12RMJBHHK37R39X9VJ3&psc=1&refRID=X12RMJBHHK37R39X9VJ3&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQzhZQVdOUUY0Nk03JmVuY3J5cHRlZElkPUEwNjU2Njc0MldKSzJZTEpZSk02NyZlbmNyeXB0ZWRBZElkPUEwNDAyNDY4MkNWSktVSUhTVTFLRyZ3aWRnZXROYW1lPXNwX3JoZl9zZWFyY2gmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl)
+
 
 ## Instrucciones
 ```
