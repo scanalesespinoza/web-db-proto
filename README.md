@@ -3,8 +3,8 @@ Escenario experimental para nuevas adopciones
 
 ## Instrucciones
 ```
-oc login https://master.scjocp3-a9fc.open.redhat.com:443 --token=nwDc3rbn95eXEIWf9kbMcC2enncBiU3rAIXgLfdQErE
-oc project web-form-demo
+- oc login https://master.scjocp3-a9fc.open.redhat.com:443 --token=nwDc3rbn95eXEIWf9kbMcC2enncBiU3rAIXgLfdQErE
+- oc project web-form-demo
 oc new-app --help
 oc new-app https://github.com/spring-guides/gs-accessing-data-mysql.git --context-dir=complete
 oc new-app https://github.com/spring-guides/gs-accessing-data-mysql.git --context-dir=complete --image=openshift/java
