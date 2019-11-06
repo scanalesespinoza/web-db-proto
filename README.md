@@ -18,33 +18,41 @@ Ten en consideraciones que varias de las instrucciones tienen como intención ge
 ```
 #  Login mediante token y/o usuario y contraseña
 1  oc login https://master.scjocp3-a9fc.open.redhat.com:443 [--token=nwDc3rbn95eXEIWf9kbMcC2enncBiU3rAIXgLfdQErE]
+
 #  Selección de proyecto
 2  oc project web-form-demo
+
 #  Limpieza de recursos
 3  oc delete --all dc,bc,po,svc,secret,pvc,route,configmap
+
 #  Creación de aplicaciones
 4  oc new-app --help
 5  oc new-app https://github.com/spring-guides/gs-accessing-data-mysql.git --context-dir=complete
 6  oc new-app https://github.com/spring-guides/gs-accessing-data-mysql.git --context-dir=complete --image=openshift/java
 7  oc status
+
 #  Revisión de logs
 8  oc get pods
 9  oc logs -f gs-accessing-data-mysql-1-build
 10 oc status
 11 oc get pods
 12 oc logs -f gs-accessing-data-mysql-1-mzlgs
+
 # Busqueda de aplicación/template y parametros de entrada
 13 oc new-app --search --template=mysql
 14 oc get template mysql-persistent -n openshift -o yaml
 15 oc delete --all dc,bc,po,svc,secret,pvc,route,configmap
 16 oc status
+
 # Creación de Base de Datos
 17 oc new-app mysql-persistent -e MYSQL_USER=admin -e MYSQL_PASSWORD=admin -e MYSQL_DATABASE=sample
 18 oc get pods
 19 oc logs -f mysql-1-t6jpw
 20 oc rsh mysql-1-t6jpw
+
 # Re creación de aplicación
 21 oc new-app https://github.com/spring-guides/gs-accessing-data-mysql.git --context-dir=complete --image=openshift/java
+
 # Creación y manejo de configuraciones
 22 vim application.properties
 23 cat application.properties
@@ -55,6 +63,7 @@ spring.datasource.password=admin
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
 24 oc create configmap db-config --from-file=application.properties
 25 oc set volume dc/gs-accessing-data-mysql --add --mount-path=/deployments/config --type=configmap --configmap-name=db-config
+
 # Verificación del funcionamiento
 26 oc get pods
 27 oc logs -f gs-accessing-data-mysql-3-9j999
@@ -62,6 +71,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
 29 oc get pods
 30 oc logs -f gs-accessing-data-mysql-4-hmwsv
 31 oc rsh gs-accessing-data-mysql-4-hmwsv
+
 # Acceso al servicio
 32 oc expose service/gs-accessing-data-mysql
 33 oc get route
